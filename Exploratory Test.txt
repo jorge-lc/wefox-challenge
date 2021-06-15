@@ -1,0 +1,59 @@
+This steps could be taken as 'Preconditions' since they repeat in scenario:
+
+1. On the main page I tried to search for a hotel, Hotel search function was not working so I chose a rental option.
+
+2. There is a date field and below that a CHANGE DATE button. Both fields are nonsense in my opinion and could be replaced by two datepickers
+for the check-in and check-out date. Also, the CHANGE DATE button doesn't do anything.
+
+3. The Shown on Map function (The one with Google's API) doesn't work.
+
+4. I choose 2 adults, 2 childs and 1 infant in the Booking options. Below the total there is a Deposit now USD $0 that shouldn't there since in this page 
+there is no option to make a deposit. I click on the BOOK NOW button.
+
+
+
+- Booking as a guest / payment on arrival:
+
+5. Now I'm on the Final Book page. 'Book as a Guest User' is chosen as default and I immediately click on CONFIRM THIS BOOKING to verify the mandatory fields.
+
+6. There is a bug when you receive the mandatory fields warning. The 'Email is required' alert is duplicated.
+
+7. I enter an invalid format in the Email field and the alert is also duplicated.
+
+8. Point 6 and 7 are related because it looks like there is a validation for the Email field and for the Confirmation Email field. This could be improve leaving just
+'Email not matching with confirm email' validation on the Confirmation Email field. Maybe the Guest Information fields should also be mandatory.
+
+9. After put down the correct information when click on CONFIRM THIS BOOKING, the 'Email not matching with confirm email' validation appear, 
+the page scroll up to the 'error' and I was redirected to the Confirmation Page with 'Your booking status is Unpaid' status.
+
+10. When I click on PAY ON ARRIVAL an alert appears asking me if I am sure that I want to pay on arrival. After confirm I was redirected to main page.
+
+
+
+- Booking as a logged user / payment on arrival:
+
+5. Now I'm on the Final Book page. 'Book as a Guest User' is chosen as default.
+
+6. I click on the Sign In option and I immediately click on CONFIRM THIS BOOKING to verify the mandatory fields. I get an 'Invalid Email or Password' message for the empty email
+and for the empty password. Maybe the Guest Information fields should also be mandatory.
+
+7. After put down the correct information when I click on CONFIRM THIS BOOKING I was redirected to the Confirmation Page with 'Your booking status is Unpaid' status.
+
+
+8. When I click on PAY ON ARRIVAL an alert appears asking me if I am sure that I want to pay on arrival. After I confirm the page reloads and the status changes to 'Your booking status is Reserved'.
+It doesn't look to specify how I should confirm my reservation, so maybe it would be good to add some steps to do that.
+
+
+
+- Booking as a logged user / payment with credit card:
+
+5. Now I'm on the Final Book page. 'Book as a Guest User' is chosen as default.
+
+6. I click on the Sign In option and I immediately click on CONFIRM THIS BOOKING to verify the mandatory fields. I get an 'Invalid Email or Password' message for the empty email
+and for the empty password. Maybe the Guest Information fields should also be mandatory.
+
+7. After putting down the correct information when I click on CONFIRM THIS BOOKING I was redirected to the Confirmation Page with 'Your booking status is Unpaid' status.
+
+8. I click on PAY NOW and the payment options are displayed. I enter fake CC data and when a click on Pay I get this error:
+ 'THE MERCHANT LOGIN ID OR PASSWORD IS INVALID OR THE ACCOUNT IS INACTIVE.'
+This seems to be inaccurate since in any step I entered that kind of information.
